@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Border with top triangle</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.css">
+    <style>
+      .box{
+        position: relative;
+        margin-top: 20px;
+        padding: 15px;
+        border: 5px solid cornflowerblue;
+        background-color: cornsilk;
+      }
+      .box::before,.box::after{
+        content: '';
+        position: absolute;
+        bottom: 100%;
+        left: 15px;
+        border: 15px solid transparent;
+        border-bottom-color: cornflowerblue;
+      }
+      .box::after{
+        left: 20px;
+        border: 10px solid transparent;
+        border-bottom-color: cornsilk;
+      }
+      .test{
+        width: 20px;
+        height: 20px;
+        border: 10px solid transparent;
+        border-bottom-color: red;
+        border-left-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <section class="section container">
+      <h1 class="title has-text-centered">The box is as below...</h1>
+      <div class="box">
+        This is a box which has a border with top triangle.
+      </div>
+      <h1 class="title has-text-centered">This is triangle test...</h1>
+      <div class="test"></div>
+    </section>
+  </body>
+</html>
