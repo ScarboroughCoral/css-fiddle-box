@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Video Backgroud</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.css">
+    <style>
+      ::-webkit-scrollbar{
+        display: none;
+      }
+      .video-bg-container{
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+      }
+      .video-bg{
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        object-position: center;
+        padding: 0;
+        margin: 0;
+        z-index: -1;
+      }
+      .bg-cover{
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background: transparent;
+        z-index: 0;
+      }
+      .main{
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <section class="video-bg-container">
+      <video 
+        class="video-bg"
+        autoplay="autoplay"
+        loop="loop"
+      >
+        <source type="video/mp4" src="https://ccdn.goodq.top/caches/ca7f25a345c62638cfe4fe48163ebb7e/aHR0cHM6Ly81ZDJkMjVlNWJjMjMxLnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDcvYTVkNWRjNWFjZjYzYmFmYTE3NzM2YzUwNTZiMmMyMWYubXA0.mp4">
+        <source type="video/webm" src="https://ccdn.goodq.top/caches/ca7f25a345c62638cfe4fe48163ebb7e/aHR0cHM6Ly81ZDJkMjVlNWJjMjMxLnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDcvYTVkNWRjNWFjZjYzYmFmYTE3NzM2YzUwNTZiMmMyMWYud2VibQ_p_p100_p_3D_p_p100_p_3D.webm">
+      </video>
+      <div class="bg-cover"></div>
+    </section>
+    <section class="main section container is-flex">
+      <h1 class="title has-text-centered has-text-white">Video Background Show...</h1>
+    </section>
+  </body>
+</html>
