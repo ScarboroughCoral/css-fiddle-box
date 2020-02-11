@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Drop Cap</title>
+    <meta name="description" content="drop cap">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.css">
+    <style>
+      .box{
+        position: relative;
+        margin-top: 20px;
+        padding: 15px;
+        border: 5px solid cornflowerblue;
+        background-color: cornsilk;
+      }
+      .box::before,.box::after{
+        content: '';
+        position: absolute;
+        bottom: 100%;
+        left: 15px;
+        border: 15px solid transparent;
+        border-bottom-color: cornflowerblue;
+      }
+      .box::after{
+        left: 20px;
+        border: 10px solid transparent;
+        border-bottom-color: cornsilk;
+      }
+      p:first-child::first-letter{
+        color: turquoise;
+        float: left;
+        margin: 0 8px 0 4px;
+        font-size: 3rem;
+        font-weight: bold;
+        line-height: 1;
+      }
+      p::first-letter{
+        margin-left: 2rem;
+      }
+      p{
+        margin-bottom: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <section class="container section box">
+      <p class="is-clearfix">What doesn't kill you makes you stronger,stand a little taller,doesn't mean I'm lonely when I'm alone...What doesn't kill you makes you stronger,stand a little taller,doesn't mean I'm lonely when I'm alone...What doesn't kill you makes you stronger,stand a little taller,doesn't mean I'm lonely when I'm alone...</p>
+      <p>This is the second paragraph,the first letter of this paragraph will not be changed...This is the second paragraph,the first letter of this paragraph will not be changed...This is the second paragraph,the first letter of this paragraph will not be changed...This is the second paragraph,the first letter of this paragraph will not be changed...This is the second paragraph,the first letter of this paragraph will not be changed...</p>
+    </section>
+  </body>
+</html>
